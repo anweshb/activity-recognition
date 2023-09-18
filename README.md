@@ -1,10 +1,10 @@
 # Human Video Activity Recognition
 
 ## Aim 
-## The aim of this project is to classify video sequences, each of 10 frames into one of the seven different activities mentioned below in the dataset description
+The aim of this project is to classify video sequences, each of 10 frames into one of the seven different activities mentioned below in the dataset description
 
 ## Dataset
-### This dataset used was taken from [Kaggle](https://www.kaggle.com/datasets/sharjeelmazhar/human-activity-recognition-video-dataset)
+ This dataset used was taken from [Kaggle](https://www.kaggle.com/datasets/sharjeelmazhar/human-activity-recognition-video-dataset)
 
 | Label | Label Name                      | Total Count |
 |-------|---------------------------------|-------------|
@@ -19,18 +19,18 @@
 
 ## Model Architecture
 
-### The model takes in a video sequence with 10 frames, with each frame being a 100x100 RGB images
+ The model takes in a video sequence with 10 frames, with each frame being a 100x100 RGB images
 
-### The video frames are passed through 3 Convolutional Layers which serve as spatial feature extractors.
+The video frames are passed through 3 Convolutional Layers which serve as spatial feature extractors.
 
-### The extracted features are lattened and passed through a Multi-Head Attention block having 8 heads and n_k = 64 for temporal feature extraction. 
+The extracted features are lattened and passed through a Multi-Head Attention block having 8 heads and n_k = 64 for temporal feature extraction. 
 
-### These features are passed into 2 fully connected layers, with the second one being the output layer.
+ These features are passed into 2 fully connected layers, with the second one being the output layer.
 
 
 ## Results
 
-### The model achieved an overall accuracy of 98.71%, more detailed results are displayed in the table below.
+ The model achieved an overall accuracy of 98.71%, more detailed results are displayed in the table below.
 
 |    Label    | Precision | Recall | F1-Score | Support |
 |:-----------:|:---------:|:------:|:--------:|:-------:|
